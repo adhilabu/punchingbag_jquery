@@ -9,7 +9,7 @@ function punchfunc() {
     ((health - 1) / health) * parseInt($("#bag-health div").css("width"), 10);
   $("#bag-health div").css("width", final);
   //condition for zero health
-  if (health <= 1) {
+  if (final <= 0) {
     $("#punch, #bag").hide();
     $("#bag-burst").show();
   }
