@@ -4,7 +4,7 @@ $("#bag-burst").hide();
 //Punch function
 function punchfunc() {
   health -= 1;
-  //health loss in each punch
+  //value of health after health loss in each punch
   var final =
     ((health - 1) / health) * parseInt($("#bag-health div").css("width"), 10);
   $("#bag-health div").css("width", final);
